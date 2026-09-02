@@ -5,8 +5,6 @@ async function main(): Promise<void> {
 
         console.log("Assistente iniciado...")
 
-        // TODO Criar comando de wake
-
         await listenForCommand()
 
     } catch (error) {
