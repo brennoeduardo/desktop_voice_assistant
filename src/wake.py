@@ -4,12 +4,12 @@ import openwakeword
 import sounddevice as sd
 from openwakeword.model import Model
 
-WAKE_WORD = "hey_jarvis"
-WAKE_THRESHOLD = 0.7
-SAMPLE_RATE = 16000
 CHANNELS = 1
 BLOCK_SIZE = 1280
-SOUND_FILE = "../audio/jarvis-0001.wav"
+SAMPLE_RATE = 16000
+WAKE_THRESHOLD = 0.7
+WAKE_WORD = "hey_jarvis"
+SOUND_FILE = "../assets/jarvis-0001.wav"
 
 openwakeword.utils.download_models()
 
