@@ -76,16 +76,28 @@ Mute o som
 ## Project structure
 
 ```text
-src/
-├── actions/       # Local Windows actions
-├── ai/            # OpenAI client, instructions and tool definitions
-├── assistant/     # Tool-call execution
-├── audio/         # Recording and transcription
-├── commands/      # Voice command flow
-├── types/
-├── utils/
-├── index.ts
-└── wake.py
+desktop_voice_assistant/
+├── assets/
+│   └── jarvis-0001.wav
+├── audio/
+│   ├── audio.wav
+│   ├── command.wav
+│   └── hey_jarvis.wav
+├── src/
+│   ├── actions/       # Local Windows actions
+│   ├── ai/            # OpenAI client, instructions and tool definitions
+│   ├── assistant/     # Tool-call execution
+│   ├── audio/         # Recording and transcription
+│   ├── commands/      # Voice command flow
+│   ├── index.ts
+│   └── wake.py
+├── .env
+├── .env.example
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json
 ```
 
 ## Requirements
@@ -113,12 +125,6 @@ Install the Node.js dependencies:
 
 ```bash
 npm install
-```
-
-Install the Python dependencies:
-
-```bash
-pip install -r requirements.txt
 ```
 
 Create your local environment file from the example:
